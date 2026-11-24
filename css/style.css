@@ -1,3 +1,7 @@
+* {
+    box-sizing:border-box;
+}
+
 body
 {
     background-color: black;
@@ -6,7 +10,7 @@ div#wrapper
 {
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 15vh 5vh 70vh 10vh;
+    grid-template-rows: 15vh 5vh auto 10vh;
     grid-template-areas: 
     "header header"
     "nav nav"
@@ -36,9 +40,46 @@ aside
 main 
 {  
     grid-area: main;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: 250px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    background-color: white;
+    font-size: larger;
 }
 
 footer
 {
     grid-area: footer;
+}
+
+.image-1
+{
+    background-image: url(../img/RQIh-8GVsXGwOfa2GPR7DMAYLuPmwh04uhZB-eHibPi0fe-p-ig-QhJNk1H8QzUWZrJTavwlykOAsQGKZz_ZP4oYgBO38Pho53m6TpRn2vGRVvXkP1zHx_Q_ceEEoaPhYjgfh6VtqrsHX962YHt_W6Rutms0znvRylajm5-7Fho.jpg);
+    background-size: cover;
+}
+
+.map-1
+{
+    background-size: cover;
+    background-image: url(../img/Spa-Francorchamps.jpg);
+}
+
+.map-2
+{
+    background-size: cover;
+    background-image: url(../img/Nürburgring\ Nordschleife.jpg);
+}
+
+.map-3
+{
+    background-size: cover;
+    background-image: url(../img/Silverstone\ Circuit.jpg);
+}
+
+.map-4
+{
+    background-size: cover;
+    background-image: url(../img/Suzuka\ Circuit.jpg);
 }
